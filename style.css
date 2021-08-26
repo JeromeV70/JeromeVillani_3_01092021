@@ -14,3 +14,8 @@ h1,h2,h3
     font-family:Shrikhand-Regular.ttf;
 }
 
+img
+{
+    width: 1vw;
+    height: 1vw;
+}
