@@ -1,0 +1,16 @@
+@font-face
+{
+    font-family:"Roboto";
+    src:url("fonts/Roboto-Regular.ttf");
+}
+
+*
+{
+    font-family:Roboto;
+}
+
+h1,h2,h3
+{
+    font-family:Shrikhand-Regular.ttf;
+}
+
