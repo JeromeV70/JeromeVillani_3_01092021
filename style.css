@@ -1,224 +1,191 @@
-@font-face
-{
-    font-family:"Roboto";
-    src:url("fonts/Roboto-Regular.ttf");
+@charset "UTF-8";
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Regular.ttf");
 }
-
-@font-face
-{
-    font-family:"Shrikhand-Regular";
-    src:url("fonts/Shrikhand-Regular.ttf");
+@font-face {
+  font-family: "Shrikhand-Regular";
+  src: url("fonts/Shrikhand-Regular.ttf");
 }
-
 /*#f5edff bouton violet sélectionné*/
 /*#99e2d0 bouton vert nouveau*/
-
-*:not(h1,h2,h3)
-{
-    font-family:Roboto;
+*:not(h1, h2, h3) {
+  font-family: Roboto;
 }
 
-h1,h2,h3
-{
-    font-family:Shrikhand;
-    margin-left:3vw;
+h1, h2, h3 {
+  font-family: Shrikhand;
+  margin-left: 3vw;
 }
 
-img
-{
-    width: 1vw;
-    height: 1vw;
+img {
+  width: 1vw;
+  height: 1vw;
 }
 
-.logo /* bloc logo */
-{
-    background-color: #ffffff;
-    text-align:center;
+.logo {
+  background-color: #ffffff;
+  text-align: center;
 }
 
-.logo img /* logo principal ohmyfood */
-{
-    width: 28vw;
-    height: 6vw;
+.logo img {
+  width: 28vw;
+  height: 6vw;
 }
 
-.localisation /* bloc localisation ville */
-{
-    background-color: #eaeaea;
-    text-align:center;
-    padding-top:2vw;
-    padding-bottom:2vw;
+.localisation {
+  background-color: #eaeaea;
+  text-align: center;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
 }
 
-.localisation img /* icone position */
-{
-    width:2vw;
-    height:2vw;
+.localisation img {
+  width: 2vw;
+  height: 2vw;
 }
 
-.localisation input /* bouton recherche ville */
-{
-    background-color: #eaeaea;
-    border:none;
-    width:20vw;
-    font-size: 3vw;
-    text-align: center;
+.localisation input {
+  background-color: #eaeaea;
+  border: none;
+  width: 20vw;
+  font-size: 3vw;
+  text-align: center;
 }
 
-.presentation /* bloc présentation */
-{
-    background-color: #f6f6f6;
-    padding:3vw;
-    text-align: center;
-    font-size: 4vw;
+.presentation {
+  background-color: #f6f6f6;
+  padding: 3vw;
+  text-align: center;
+  font-size: 4vw;
 }
 
-.presentation p:nth-child(1) /* Première ligne en gras */
-{
-    font-weight:bolder;
-
+.presentation p:nth-child(1) {
+  font-weight: bolder;
 }
 
-.presentation p:nth-child(2) /* Première ligne en gras */
-{
-    color:grey;
+.presentation p:nth-child(2) {
+  color: grey;
 }
 
-.presentation button
-{
-    border:none;
-    color:white;
-    font-weight: bold;
-    font-size: 4vw;
-    padding:3.5vw;
-    border-radius: 50px;
-    background: rgb(147,86,220);
-    background: linear-gradient(345deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
-    margin-bottom: 8vw;
+.presentation button {
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 4vw;
+  padding: 3.5vw;
+  border-radius: 50px;
+  background: #9356dc;
+  background: linear-gradient(345deg, #9356dc 0%, #ff79da 100%);
+  margin-bottom: 8vw;
 }
 
-.fonctionnement div
-{
-    display:flex;
-    flex-flow:row,nowrap;
-    border-radius: 25px;
-    box-shadow: 3px 3px 10px lightgray;
-    background-color:#f6f6f6;
-    margin-bottom:4vw;
-    margin-left:3vw;
-    margin-right:3vw;
-    padding:3vw;
-    justify-content: flex-start;
-    row-gap: 5vw;
+.fonctionnement div {
+  display: flex;
+  flex-flow: row, nowrap;
+  border-radius: 25px;
+  box-shadow: 3px 3px 10px lightgray;
+  background-color: #f6f6f6;
+  margin-bottom: 4vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  padding: 3vw;
+  justify-content: flex-start;
+  row-gap: 5vw;
 }
 
-.fonctionnement div:hover
-{
-    background-color: #f5edff;
+.fonctionnement div:hover {
+  background-color: #f5edff;
 }
 
-.fonctionnement img
-{
-    width:4vw;
-    height:4vw;
-    align-self:center;
-    margin-right:5vw;
+.fonctionnement img {
+  width: 4vw;
+  height: 4vw;
+  align-self: center;
+  margin-right: 5vw;
 }
 
-.circle-fonctionnement /* cercle des numéros 1,2,3 */
-{
-    border-radius: 100%;
-    width: 5vw;
-    height:5vw;
-    align-self: center;
-    position:relative;
-    left:-5vw;
-    background-color:#9356DC;
+.circle-fonctionnement {
+  border-radius: 100%;
+  width: 5vw;
+  height: 5vw;
+  align-self: center;
+  position: relative;
+  left: -5vw;
+  background-color: #9356DC;
 }
 
-.numero-fonctionnement /* numéros d'étapes (1,2,3) */
-{
-    display: inline;
-    color:white;
-    border-radius:100%;
-    font-size:3vw;
-    position:relative;
-    left:1.66vw;
-    top:0.75vw;
+.numero-fonctionnement {
+  display: inline;
+  color: white;
+  border-radius: 100%;
+  font-size: 3vw;
+  position: relative;
+  left: 1.66vw;
+  top: 0.75vw;
 }
 
-.fonctionnement p
-{
-    display:block;
-    font-size: 4vw;
+.fonctionnement p {
+  display: block;
+  font-size: 4vw;
 }
 
-.restaurants
-{
-    background-color: #f6f6f6;
-    padding-top:5vw;
-    padding-bottom:5vw;
+.restaurants {
+  background-color: #f6f6f6;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
 }
 
-.restaurants__vignette
-{
-    border-radius: 25px;
-    width:90vw;
-    height:50vw;
-    margin-bottom: 5vw;
-    margin-left:2vw;
-    margin-right:2vw;
-    background-color: #ffffff;
+.restaurants__vignette {
+  border-radius: 25px;
+  width: 90vw;
+  height: 50vw;
+  margin-bottom: 5vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  background-color: #ffffff;
 }
 
-.restaurants__image
-{
-    width:90vw;
-    height: 37vw;
-    border-radius: 25px 25px 0px 0px;
-    object-fit: cover;
+.restaurants__image {
+  width: 90vw;
+  height: 37vw;
+  border-radius: 25px 25px 0px 0px;
+  object-fit: cover;
 }
 
-.restaurants__nom, .restaurants__localisation
-{
-    margin:1vw;
-    font-size: 3vw;
+.restaurants__nom, .restaurants__localisation {
+  margin: 1vw;
+  font-size: 3vw;
 }
 
-.restaurants__favoris
-{
-    width: 4vw;
-    height: 4vw;
-    display:inline-block;
-    float: right;
-    margin-right:2vw;
-    margin-bottom:5vw;
+.restaurants__favoris {
+  width: 4vw;
+  height: 4vw;
+  float: right;
+  margin-right: 2vw;
+  margin-bottom: 5vw;
 }
 
-
-
-footer
-{
-    background-color: #353535;
-    Padding:2vw;
+footer {
+  background-color: #353535;
+  Padding: 2vw;
 }
 
-footer a /* liens dans le footer */
-{
-    text-decoration: none;
-    display:block;
-    color: white;
-    margin-bottom:0.5vw;
+footer a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  margin-bottom: 0.5vw;
 }
 
-footer a img /* icones des liens footer */
-{
-    margin-right:0.5vw;
+footer a img {
+  margin-right: 0.5vw;
 }
 
-.footer__logo /* logo ohmyfood footer */
-{
-    width: 8vw;
-    height: 2vw;
-    margin-bottom: 1vw;
+.footer__logo {
+  width: 8vw;
+  height: 2vw;
+  margin-bottom: 1vw;
 }
+
+/*# sourceMappingURL=style.css.map */
