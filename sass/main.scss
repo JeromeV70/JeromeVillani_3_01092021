@@ -6,7 +6,7 @@
 
 @font-face
 {
-    font-family:"Shrikhand-Regular";
+    font-family:"Shrikhand";
     src:url("fonts/Shrikhand-Regular.ttf");
 }
 
@@ -34,13 +34,14 @@ img
 {
     background-color: #ffffff;
     text-align:center;
+    h1
+    {
+        font-size: 8vw;
+        font-weight: 500;
+        margin:0vw;
+    }
 }
 
-.logo img /* logo principal ohmyfood */
-{
-    width: 28vw;
-    height: 6vw;
-}
 
 .localisation /* bloc localisation ville */
 {

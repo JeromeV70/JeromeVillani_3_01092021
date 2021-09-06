@@ -4,7 +4,7 @@
   src: url("fonts/Roboto-Regular.ttf");
 }
 @font-face {
-  font-family: "Shrikhand-Regular";
+  font-family: "Shrikhand";
   src: url("fonts/Shrikhand-Regular.ttf");
 }
 /*#f5edff bouton violet sélectionné*/
@@ -27,10 +27,10 @@ img {
   background-color: #ffffff;
   text-align: center;
 }
-
-.logo img {
-  width: 28vw;
-  height: 6vw;
+.logo h1 {
+  font-size: 8vw;
+  font-weight: 500;
+  margin: 0vw;
 }
 
 .localisation {
