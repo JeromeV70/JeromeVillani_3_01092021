@@ -33,6 +33,7 @@ h2
 {
     margin-left:2vw;
     font-size:5vw;
+    width:100%;
 }
 
 img
@@ -109,60 +110,61 @@ img
     margin-bottom: 8vw;
 }
 
-.fonctionnement div
+.fonctionnement
 {
-    display:flex;
-    flex-flow:row,nowrap;
-    border-radius: 25px;
-    box-shadow: 3px 3px 10px lightgray;
-    background-color:#f6f6f6;
-    margin-bottom:4vw;
-    margin-left:3vw;
-    margin-right:3vw;
-    padding:3vw;
-    justify-content: flex-start;
-    row-gap: 5vw;
-}
-
-.fonctionnement div:hover
-{
-    background-color: #f5edff;
-}
-
-.fonctionnement img
-{
-    width:4vw;
-    height:4vw;
-    align-self:center;
-    margin-right:5vw;
-}
-
-.circle-fonctionnement /* cercle des numéros 1,2,3 */
-{
-    border-radius: 100%;
-    width: 5vw;
-    height:5vw;
-    align-self: center;
-    position:relative;
-    left:-5vw;
-    background-color:#9356DC;
-}
-
-.numero-fonctionnement /* numéros d'étapes (1,2,3) */
-{
-    display: inline;
-    color:white;
-    border-radius:100%;
-    font-size:3vw;
-    position:relative;
-    left:1.66vw;
-    top:0.75vw;
-}
-
-.fonctionnement p
-{
-    display:block;
-    font-size: 4vw;
+display:flex;
+flex-flow:row wrap;
+    div
+    {
+        display:flex;
+        flex-flow:row nowrap;
+        width:100vw;
+        border-radius: 25px;
+        box-shadow: 3px 3px 10px lightgray;
+        background-color:#f6f6f6;
+        margin-bottom:4vw;
+        margin-left:3vw;
+        margin-right:3vw;
+        padding:3vw;
+        justify-content: flex-start;
+        row-gap: 5vw;
+    }
+    div:hover
+    {
+        background-color: #f5edff;
+    }
+    img
+    {
+        width:4vw;
+        height:4vw;
+        align-self:center;
+        margin-right:5vw;
+    }
+    .circle-fonctionnement /* cercle des numéros 1,2,3 */
+    {
+        border-radius: 100%;
+        width: 5vw;
+        height:5vw;
+        align-self: center;
+        position:relative;
+        left:-5vw;
+        background-color:#9356DC;
+    }
+    .numero-fonctionnement /* numéros d'étapes (1,2,3) */
+    {
+        display: inline;
+        color:white;
+        border-radius:100%;
+        font-size:3vw;
+        position:relative;
+        left:1.66vw;
+        top:0.75vw;
+    }
+    p
+    {
+        display:block;
+        font-size: 4vw;
+    }
 }
 
 .restaurants
@@ -175,11 +177,12 @@ img
 .restaurants__vignette
 {
     display:grid;
-    grid-template-columns: 68vw 26vw;
+    grid-template-columns: 68vw auto;
     grid-template-rows: 14vw 35vw 10.5vw 10.5vw;
     border-radius:25px;
-    margin-bottom: 5vw;
+    margin-bottom:5vw;
     margin-left:2vw;
+    margin-right:2vw;
     background-color: #ffffff;
     .restaurants__image
     {
@@ -263,4 +266,69 @@ footer
     font-weight:normal;
     font-size:1em;
     color:white;
+}
+
+@media screen and (min-width:769px) and (max-width:991px)
+{
+    /*
+    .fonctionnement
+    {
+        h2
+        {
+            width:100%;
+        }
+        div
+        {
+            width:20%;
+        }
+        border:1px solid red;
+    }
+    */
+    .restaurants
+    {
+        display:flex;
+        flex-flow:row wrap;
+        .restaurants__vignette
+        {
+            grid-template-columns: 66% 34%;
+            grid-template-rows: 7vw 17.5vw 5.25vw 5.25vw;
+            margin-bottom:5vw;
+            margin-left:2vw;
+            margin-right:2vw;
+            width:45%;
+            .restaurants__image
+            {
+                width:100%;
+                height:100%;
+            }
+            .restaurants__nouveau--on
+            {
+                width:10vw;
+                height:3.5vw;
+                font-size:2vw;
+                margin-top:4vw;
+            }
+            .restaurants__nom
+            {
+                font-size:1.5vw;
+                font-size:2.5vw;
+                margin-left:4vw;
+                margin-bottom:1vw;
+            }
+            .restaurants__localisation
+            {
+                font-size:1.5vw;
+                font-size:2.5vw;
+                margin-left:4vw;
+                margin-top:1vw;
+            }
+            .restaurants__favoris
+            {
+                width:25%;
+                margin-left:6vw;
+                margin-top:4vw;
+            }
+        }
+    }
+
 }
