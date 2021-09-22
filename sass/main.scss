@@ -250,12 +250,41 @@ flex-flow:row wrap;
     }
     .restaurants__favoris
     {
-        grid-row: 3 / 5;
+        grid-row: 3 / 4;
         grid-column: 2 / 3;
+        font-size:8vw;
         width:25%;
         height:auto;
-        margin-left:12vw;
-        margin-top:8vw;
+        margin-left:9vw;
+        margin-top:6vw;
+        cursor:pointer;
+        .fas
+        {
+            display:none;
+        }
+        &:hover
+        {
+            .far
+            {
+                display:none;
+            }
+            .fas
+            {
+                display:inline;
+                background: linear-gradient(345deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+                -webkit-background-clip:text;
+                -webkit-text-fill-color:transparent;
+                -webkit-animation:display_favoris 1.5s;
+
+                @-webkit-keyframes display_favoris
+                {
+                    0%{opacity:0%;}
+                    50%{opacity:50%;}
+                    100%{opacity:100%;}
+                }
+            }
+
+        }
     }
     .restaurants__lien
     {
@@ -570,6 +599,7 @@ footer
                 width:25%;
                 margin-left:6vw;
                 margin-top:4vw;
+                font-size:4vw;
             }
         }
     }
@@ -691,6 +721,8 @@ footer
                 width:25%;
                 margin-left:3vw;
                 margin-top:2vw;
+                font-size:2vw;
+
             }
         }
     }
