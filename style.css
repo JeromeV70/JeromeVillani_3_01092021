@@ -410,7 +410,24 @@ footer a img {
   text-align: center;
 }
 .menu .menu__liste .menu__categorie--entree .menu__aliment .aliment__validation, .menu .menu__liste .menu__categorie--plat .menu__aliment .aliment__validation, .menu .menu__liste .menu__categorie--dessert .menu__aliment .aliment__validation {
+  grid-row: 1/3;
+  grid-column: 3/4;
+  width: 100%;
+  font-size: 6vw;
+  text-align: center;
+  padding-top: 4.5vw;
+  border-radius: 0 20px 20px 0;
+  background-color: #99e2d0;
   display: none;
+}
+.menu .menu__liste .menu__categorie--entree .menu__aliment .aliment__validation .fas, .menu .menu__liste .menu__categorie--plat .menu__aliment .aliment__validation .fas, .menu .menu__liste .menu__categorie--dessert .menu__aliment .aliment__validation .fas {
+  color: #ffffff;
+}
+.menu .menu__liste .menu__categorie--entree .menu__aliment:hover .aliment__validation, .menu .menu__liste .menu__categorie--plat .menu__aliment:hover .aliment__validation, .menu .menu__liste .menu__categorie--dessert .menu__aliment:hover .aliment__validation {
+  display: block;
+}
+.menu .menu__liste .menu__categorie--entree .menu__aliment:hover .aliment__prix, .menu .menu__liste .menu__categorie--plat .menu__aliment:hover .aliment__prix, .menu .menu__liste .menu__categorie--dessert .menu__aliment:hover .aliment__prix {
+  grid-column: 2/3;
 }
 .menu .menu__liste button {
   grid-row: 5/6;
