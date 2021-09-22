@@ -258,7 +258,7 @@ flex-flow:row wrap;
         margin-left:9vw;
         margin-top:6vw;
         cursor:pointer;
-        .fas
+        .fas /* Logo favoris non-activé */
         {
             display:none;
         }
@@ -268,7 +268,7 @@ flex-flow:row wrap;
             {
                 display:none;
             }
-            .fas
+            .fas /* Logo favoris activé */
             {
                 display:inline;
                 background: linear-gradient(345deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
@@ -362,11 +362,42 @@ footer
                 font-size:7vw;
                 font-weight:normal;
             }
-            img /* logo favoris à coté du nom du restaurant */
+            .restaurants__favoris /* logo favoris à coté du nom du restaurant */
             {
-                width:5vw;
+                width:max-content;
                 height:auto;
                 margin-right:8vw;
+                margin-top:6vw;
+                font-size: 8vw;
+                cursor:pointer;
+                .fas /* Logo favoris non activé */
+                {
+                    display:none;
+                }
+                &:hover
+                {
+                    .far
+                    {
+                        display:none;
+                    }
+                    .fas /* Logo favoris activé */
+                    {
+                        display:inline;
+                        background: linear-gradient(345deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+                        -webkit-background-clip:text;
+                        -webkit-text-fill-color:transparent;
+                        -webkit-animation:display_favoris 1.5s;
+        
+                        @-webkit-keyframes display_favoris
+                        {
+                            0%{opacity:0%;}
+                            50%{opacity:50%;}
+                            100%{opacity:100%;}
+                        }
+                    }
+                }
+
+
             }
         }
         .menu__categorie--entree

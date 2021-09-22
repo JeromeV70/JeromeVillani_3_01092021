@@ -302,10 +302,37 @@ footer a img {
   font-size: 7vw;
   font-weight: normal;
 }
-.menu .menu__liste .menu__restaurant img {
-  width: 5vw;
+.menu .menu__liste .menu__restaurant .restaurants__favoris {
+  width: max-content;
   height: auto;
   margin-right: 8vw;
+  margin-top: 6vw;
+  font-size: 8vw;
+  cursor: pointer;
+}
+.menu .menu__liste .menu__restaurant .restaurants__favoris .fas {
+  display: none;
+}
+.menu .menu__liste .menu__restaurant .restaurants__favoris:hover .far {
+  display: none;
+}
+.menu .menu__liste .menu__restaurant .restaurants__favoris:hover .fas {
+  display: inline;
+  background: linear-gradient(345deg, #9356dc 0%, #ff79da 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: display_favoris 1.5s;
+}
+@-webkit-keyframes display_favoris {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 .menu .menu__liste .menu__categorie--entree {
   grid-row: 2/3;
