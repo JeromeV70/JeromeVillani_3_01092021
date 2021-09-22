@@ -262,7 +262,7 @@ flex-flow:row wrap;
         {
             display:none;
         }
-        &:hover
+        &:active
         {
             .far
             {
@@ -279,7 +279,6 @@ flex-flow:row wrap;
                 @-webkit-keyframes display_favoris
                 {
                     0%{opacity:0%;}
-                    50%{opacity:50%;}
                     100%{opacity:100%;}
                 }
             }
@@ -374,7 +373,7 @@ footer
                 {
                     display:none;
                 }
-                &:hover
+                &:active
                 {
                     .far
                     {
@@ -472,7 +471,6 @@ footer
                     white-space:nowrap;
                     text-overflow:ellipsis;
                     overflow:hidden;
-                    width:60%;
                 }
                 .aliment__prix
                 {
@@ -500,7 +498,7 @@ footer
                         color:$color-light;
                     }
                 }
-                &:hover .aliment__validation
+                &:active .aliment__validation
                 {
                     display:block;
                     -webkit-animation:display_validation 0.5s;
@@ -511,7 +509,7 @@ footer
                         100%{width:15%;}
                     }
                 }
-                &:hover .fas
+                &:active .fas
                 {
                     -webkit-animation:display_rotation 0.5s;
                     -webkit-animation-fill-mode: forwards;
@@ -525,7 +523,7 @@ footer
                         100%{transform:rotate(360deg);}
                     }   
                 }
-                &:hover .aliment__prix
+                &:active .aliment__prix
                 {
                     -webkit-animation:display_prix 0.5s;
                     -webkit-animation-fill-mode: forwards;
@@ -536,7 +534,7 @@ footer
                         100%{transform:translate(-15%);}
                     }
                 }
-                &:hover .aliment__description
+                &:active .aliment__description
                 {
                     -webkit-animation:display_description 0.5s;
                     -webkit-animation-fill-mode: forwards;
