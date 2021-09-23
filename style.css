@@ -7,6 +7,7 @@
   font-family: "Shrikhand";
   src: url("fonts/Shrikhand-Regular.ttf");
 }
+/* pour affichage progressif des aliments */
 body {
   margin: 0;
 }
@@ -187,6 +188,18 @@ a {
   margin-right: 2vw;
   background-color: #ffffff;
   box-shadow: 3px 3px 10px lightgray;
+}
+.restaurants__vignette:hover {
+  -webkit-animation: display_restaurant 0.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes display_restaurant {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
 }
 .restaurants__vignette .restaurants__image {
   grid-row: 1/3;

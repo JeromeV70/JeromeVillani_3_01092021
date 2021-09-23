@@ -21,7 +21,7 @@ $color-shadow:lightgray;
 $color-icons:grey;
 $color-fonctionnement:#9356DC;
 
-$aliments:1 2 3 4 5 6 7 8 9 10;
+$aliments:1 2 3 4 5 6 7 8 9 10; /* pour affichage progressif des aliments */
 
 body
 {
@@ -232,6 +232,17 @@ flex-flow:row wrap;
     margin-right:2vw;
     background-color: $color-light;
     box-shadow: 3px 3px 10px $color-shadow;
+    &:hover
+    {
+        -webkit-animation:display_restaurant 0.5s;
+        -webkit-animation-fill-mode: forwards;
+
+        @-webkit-keyframes display_restaurant
+        {
+            0%{transform: scale(1);}
+            100%{transform: scale(1.05);}
+        }
+    }
     .restaurants__image
     {
         grid-row: 1 / 3;
