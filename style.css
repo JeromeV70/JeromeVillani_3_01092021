@@ -37,40 +37,46 @@ a {
 }
 
 .logo {
+  box-shadow: 0px 5px 12px lightgray;
+}
+
+.logo--menu, .logo {
   background-color: #ffffff;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
+  margin-bottom: 5px;
 }
-.logo .retour {
+.logo--menu .retour, .logo .retour {
   font-size: 4vw;
   position: absolute;
   top: 4vw;
   left: 3vw;
 }
-.logo h1 {
+.logo--menu h1, .logo h1 {
   display: block;
   font-size: 8vw;
   font-weight: 500;
-  margin: 0vw;
+  margin: 1vw;
 }
 
 .localisation {
+  display: flex;
+  flex-flow: row nowrap;
   background-color: #eaeaea;
-  text-align: center;
-  padding-top: 2vw;
-  padding-bottom: 2vw;
+  height: 10vw;
+  justify-content: center;
+  align-items: center;
 }
-.localisation img {
-  width: 2vw;
-  height: 2vw;
+.localisation .fas {
+  font-size: 3vw;
+  margin-right: 2vw;
 }
 .localisation input {
   background-color: #eaeaea;
   border: none;
   width: 20vw;
   font-size: 3vw;
-  text-align: center;
 }
 
 .presentation {
@@ -97,6 +103,20 @@ a {
   margin-bottom: 8vw;
   box-shadow: 3px 3px 10px lightgray;
 }
+.presentation button:hover {
+  -webkit-animation: display_button 0.2s;
+}
+@-webkit-keyframes display_button {
+  0% {
+    transform: rotate(0.01turn);
+  }
+  100% {
+    transform: rotate(-0.01turn);
+  }
+}
+.presentation button:active {
+  transform: scale(0.9);
+}
 
 .fonctionnement {
   display: flex;
@@ -119,13 +139,16 @@ a {
 .fonctionnement div:hover {
   background-color: #f5edff;
 }
-.fonctionnement div img {
-  width: 4vw;
-  height: 4vw;
+.fonctionnement div:hover .fas {
+  color: #9356DC;
+}
+.fonctionnement div .fas {
+  font-size: 3vw;
   align-self: center;
+  color: grey;
   margin-right: 5vw;
 }
-.fonctionnement div .circle-fonctionnement {
+.fonctionnement div .fonctionnement__cercle {
   border-radius: 100%;
   width: 5vw;
   height: 5vw;
@@ -134,7 +157,7 @@ a {
   left: -5vw;
   background-color: #9356DC;
 }
-.fonctionnement div .numero-fonctionnement {
+.fonctionnement div .fonctionnement__numero {
   display: inline;
   color: #ffffff;
   border-radius: 100%;
@@ -657,6 +680,20 @@ footer a img {
   padding: 3.5vw;
   cursor: pointer;
 }
+.menu .menu__liste button:hover {
+  -webkit-animation: display_button 0.2s;
+}
+@-webkit-keyframes display_button {
+  0% {
+    transform: rotate(0.01turn);
+  }
+  100% {
+    transform: rotate(-0.01turn);
+  }
+}
+.menu .menu__liste button:active {
+  transform: scale(0.9);
+}
 
 /* 
 
@@ -669,6 +706,10 @@ footer a img {
   }
   .logo h1 {
     font-size: 6vw;
+  }
+
+  .localisation {
+    height: auto;
   }
 
   .presentation {
@@ -698,12 +739,12 @@ footer a img {
     height: 3vw;
     margin-right: 5vw;
   }
-  .fonctionnement div .circle-fonctionnement {
+  .fonctionnement div .fonctionnement__cercle {
     width: 5vw;
     height: 5vw;
     left: -2.5vw;
   }
-  .fonctionnement div .numero-fonctionnement {
+  .fonctionnement div .fonctionnement__numero {
     font-size: 2.5vw;
     left: 0.9vw;
     top: 0.75vw;
@@ -766,6 +807,10 @@ footer a img {
     font-size: 6vw;
   }
 
+  .localisation {
+    height: auto;
+  }
+
   .presentation {
     font-size: 2vw;
     padding-bottom: 0;
@@ -793,12 +838,12 @@ footer a img {
     height: 3vw;
     margin-right: 5vw;
   }
-  .fonctionnement div .circle-fonctionnement {
+  .fonctionnement div .fonctionnement__cercle {
     width: 5vw;
     height: 5vw;
     left: -2.5vw;
   }
-  .fonctionnement div .numero-fonctionnement {
+  .fonctionnement div .fonctionnement__numero {
     font-size: 2.5vw;
     left: 0.9vw;
     top: 0.75vw;

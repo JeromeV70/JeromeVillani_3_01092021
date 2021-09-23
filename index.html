@@ -11,21 +11,23 @@
             <h1>ohmyfood</h1>
         </section>
         <section class="localisation">
-            <img src ="icons/map-marker-alt-solid.svg" alt="logo-position" />
+            <span class="fas fa-map-marker-alt"></span>
             <input type="text" value="Paris, Belleville" />
         </section>
         <section class="presentation">
             <p>Réservez le menu qui vous convient</p>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <button>Explorez nos restaurants</button>
+            <a href="#restaurants">
+                <button>Explorez nos restaurants</button>
+            </a>
         </section>
         <section class="fonctionnement">
             <h2>Fonctionnement</h2>
-            <div><span class="circle-fonctionnement"><span class="numero-fonctionnement">1</span></span><img src="icons/mobile-alt-solid.svg" alt="icone-choix" /><p>Choisissez un restaurant</p></div>
-            <div><span class="circle-fonctionnement"><span class="numero-fonctionnement">2</span></span><img src="icons/list-solid.svg" alt="icone-choix" /><p>Composez votre menu</p></div>
-            <div><span class="circle-fonctionnement"><span class="numero-fonctionnement">3</span></span><img src="icons/store-solid.svg" alt="icone-choix" /><p>Dégustez au restaurant</p></div>
+            <div><span class="fonctionnement__cercle"><span class="fonctionnement__numero">1</span></span><span class="fas fa-mobile-alt"></span><p>Choisissez un restaurant</p></div>
+            <div><span class="fonctionnement__cercle"><span class="fonctionnement__numero">2</span></span><span class="fas fa-list-ul"></span><p>Composez votre menu</p></div>
+            <div><span class="fonctionnement__cercle"><span class="fonctionnement__numero">3</span></span><span class="fas fa-store"></span><p>Dégustez au restaurant</p></div>
         </section>
-        <section class="restaurants">
+        <section id=restaurants class="restaurants">
             <h2>Restaurants</h2>
             <article class="restaurants__vignette">
                 <img class="restaurants__image" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût" />

@@ -18,6 +18,8 @@ $color-middle:#f6f6f6;
 $color-light:#ffffff;
 $color-footer:#353535;;
 $color-shadow:lightgray;
+$color-icons:grey;
+$color-fonctionnement:#9356DC;
 
 $aliments:1 2 3 4 5 6 7 8 9 10;
 
@@ -55,13 +57,19 @@ a
 text-decoration:none;
 color:black;
 }
+.logo /* logo page index avec effet ombre */
+{
+    @extend .logo--menu;
+    box-shadow: 0px 5px 12px $color-shadow;
+}
 
-.logo /* bloc logo */
+.logo--menu /* bloc logo */
 {
     background-color: $color-light;
     display:flex;
     flex-flow:row nowrap;
     justify-content: center;
+    margin-bottom:5px;
     .retour
     {
         font-size:4vw;
@@ -74,20 +82,22 @@ color:black;
         display:block;
         font-size: 8vw;
         font-weight: 500;
-        margin:0vw;
+        margin:1vw;
     }
 }
 
 .localisation /* bloc localisation ville */
 {
+    display:flex;
+    flex-flow: row nowrap;
     background-color: $color-dark;
-    text-align:center;
-    padding-top:2vw;
-    padding-bottom:2vw;
-    img /* icone position */
+    height:10vw;
+    justify-content: center;
+    align-items: center;
+    .fas /* icone position */
     {
-        width:2vw;
-        height:2vw;
+        font-size:3vw;
+        margin-right:2vw;
     }
     input /* bouton recherche ville */
     {
@@ -95,7 +105,6 @@ color:black;
         border:none;
         width:20vw;
         font-size: 3vw;
-        text-align: center;
     }
 }
 
@@ -112,7 +121,7 @@ color:black;
 
     p:nth-child(2) /* Première ligne en gras */
     {
-        color:grey;
+        color:$color-icons;
     }
 
     button
@@ -127,6 +136,20 @@ color:black;
         background: linear-gradient(345deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
         margin-bottom: 8vw;
         box-shadow: 3px 3px 10px $color-shadow;
+        &:hover
+        {
+            -webkit-animation:display_button 0.2s;
+
+            @-webkit-keyframes display_button
+            {
+                0%{transform: rotate(0.01turn);}
+                100%{transform: rotate(-0.01turn);;}
+            }
+        }
+        &:active
+        {
+            transform: scale(.9);
+        }
     }
 }
 
@@ -152,14 +175,18 @@ flex-flow:row wrap;
         {
             background-color: $color-over;
         }
-        img
+        &:hover .fas
         {
-            width:4vw;
-            height:4vw;
+            color: $color-fonctionnement;
+        }
+        .fas
+        {
+            font-size:3vw;
             align-self:center;
+            color:$color-icons;
             margin-right:5vw;
         }
-        .circle-fonctionnement /* cercle des numéros 1,2,3 */
+        .fonctionnement__cercle /* cercle des numéros 1,2,3 */
         {
             border-radius: 100%;
             width: 5vw;
@@ -167,9 +194,9 @@ flex-flow:row wrap;
             align-self: center;
             position:relative;
             left:-5vw;
-            background-color:#9356DC;
+            background-color: $color-fonctionnement;
         }
-        .numero-fonctionnement /* numéros d'étapes (1,2,3) */
+        .fonctionnement__numero /* numéros d'étapes (1,2,3) */
         {
             display: inline;
             color:$color-light;
@@ -185,8 +212,6 @@ flex-flow:row wrap;
             font-size: 4vw;
         }        
     }
-
-
 }
 
 .restaurants
@@ -574,6 +599,20 @@ footer
             margin:5vw 20vw 10vw 20vw;
             padding:3.5vw;
             cursor:pointer;
+            &:hover
+            {
+                -webkit-animation:display_button 0.2s;
+    
+                @-webkit-keyframes display_button
+                {
+                    0%{transform: rotate(0.01turn);}
+                    100%{transform: rotate(-0.01turn);;}
+                }
+            }
+            &:active
+            {
+                transform: scale(.9);
+            }
         }
     }
 }
@@ -603,7 +642,10 @@ footer
             font-size: 6vw;
         }
     }
-
+    .localisation /* bloc localisation ville */
+    {
+        height:auto;
+    }
     .presentation
     {
         font-size:2vw;
@@ -636,13 +678,13 @@ footer
                 height:3vw;
                 margin-right:5vw;
             }
-            .circle-fonctionnement /* cercle des numéros 1,2,3 */
+            .fonctionnement__cercle /* cercle des numéros 1,2,3 */
             {
                 width:5vw;
                 height:5vw;
                 left:-2.5vw;
             }
-            .numero-fonctionnement /* numéros d'étapes (1,2,3) */
+            .fonctionnement__numero /* numéros d'étapes (1,2,3) */
             {
                 font-size:2.5vw;
                 left:0.9vw;
@@ -724,6 +766,11 @@ footer
             font-size: 6vw;
         }
     }
+    .localisation /* bloc localisation ville */
+    {
+        height:auto;
+    }
+    
     .presentation
     {
         font-size:2vw;
@@ -756,13 +803,13 @@ footer
                 height:3vw;
                 margin-right:5vw;
             }
-            .circle-fonctionnement /* cercle des numéros 1,2,3 */
+            .fonctionnement__cercle /* cercle des numéros 1,2,3 */
             {
                 width:5vw;
                 height:5vw;
                 left:-2.5vw;
             }
-            .numero-fonctionnement /* numéros d'étapes (1,2,3) */
+            .fonctionnement__numero /* numéros d'étapes (1,2,3) */
             {
                 font-size:2.5vw;
                 left:0.9vw;
