@@ -50,18 +50,23 @@ img
     height: 1vw;
 }
 
+a
+{
+text-decoration:none;
+color:black;
+}
+
 .logo /* bloc logo */
 {
     background-color: $color-light;
     display:flex;
     flex-flow:row nowrap;
     justify-content: center;
-    img
+    .retour
     {
-        width:4vw;
-        height: auto;
+        font-size:4vw;
         position:absolute;
-        top:3vw;
+        top:4vw;
         left:3vw;
     }
     h1
@@ -72,7 +77,6 @@ img
         margin:0vw;
     }
 }
-
 
 .localisation /* bloc localisation ville */
 {
@@ -590,11 +594,9 @@ footer
 {
     .logo /* bloc logo */
     {
-        img
+        .retour
         {
-            top:2vw;
-            left:2vw;
-            width:2vw;
+            top:2.5vw;
         }
         h1
         {
@@ -713,11 +715,9 @@ footer
 {
     .logo /* bloc logo */
     {
-        img
+        .retour
         {
-            top:2vw;
-            left:2vw;
-            width:2vw;
+            top:2.5vw;
         }
         h1
         {
