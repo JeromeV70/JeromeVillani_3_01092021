@@ -340,9 +340,10 @@ footer a .fas {
   grid-row: 1/2;
   grid-column: 1/2;
 }
-.menu .menu__liste .menu__restaurant h1 {
+.menu .menu__liste .menu__restaurant h2 {
   font-size: 7vw;
   font-weight: normal;
+  font-family: "Shrikhand";
 }
 .menu .menu__liste .menu__restaurant .restaurants__favoris {
   width: max-content;

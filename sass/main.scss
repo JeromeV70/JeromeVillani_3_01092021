@@ -402,10 +402,11 @@ footer
             justify-content: space-between;
             grid-row:1/2;
             grid-column:1/2;
-            h1
+            h2
             {
                 font-size:7vw;
                 font-weight:normal;
+                font-family:"Shrikhand";
             }
             .restaurants__favoris /* logo favoris à coté du nom du restaurant */
             {
