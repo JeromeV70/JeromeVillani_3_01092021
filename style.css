@@ -104,6 +104,9 @@ a {
   margin-bottom: 8vw;
   box-shadow: 3px 3px 10px lightgray;
 }
+.presentation button a {
+  color: unset;
+}
 .presentation button:hover {
   -webkit-animation: display_button 0.2s;
 }
@@ -288,6 +291,7 @@ footer {
 footer .footer__logo {
   margin-left: 0;
   margin-top: 0;
+  font-family: Shrikhand;
   font-weight: normal;
   font-size: 4vw;
   color: #ffffff;
