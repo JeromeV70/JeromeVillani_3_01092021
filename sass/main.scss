@@ -114,6 +114,7 @@ color:black;
     padding:3vw;
     text-align: center;
     font-size: 4vw;
+    margin-bottom:6vw;
     p:nth-child(1) /* Première ligne en gras */
     {
         font-weight:bolder;
@@ -124,21 +125,18 @@ color:black;
         color:$color-icons;
     }
 
-    button
+    .button
     {
-        a
-        {
-            color:unset;
-        }
-        border:none;
+        display: block;
+        width:max-content;
         color:$color-light;
         font-weight: bold;
-        font-size: 4vw;
-        padding:3.5vw;
-        border-radius: 50px;
+        font-size: 3vw;
+        padding:3.5vw 6vw;
+        border-radius: 10vw;
         background: rgb(147,86,220);
         background: linear-gradient(345deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
-        margin-bottom: 8vw;
+        margin:6vw auto;
         box-shadow: 3px 3px 10px $color-shadow;
         &:hover
         {
@@ -161,6 +159,7 @@ color:black;
 {
 display:flex;
 flex-flow:row wrap;
+margin-bottom:6vw;
     div
     {
         display:flex;
@@ -600,21 +599,19 @@ footer
                 }
             }
         }
-        button /* bouton commander */
+        .button
         {
-            grid-row:5/6;
-            grid-column:1/2;
-            border:none;
+            display: block;
+            width:max-content;
             color:$color-light;
             font-weight: bold;
-            font-size: 4vw;
+            font-size: 3vw;
+            padding:2.5vw 10vw;
+            border-radius: 10vw;
             background: rgb(147,86,220);
             background: linear-gradient(345deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
-            border-radius: 50px;
+            margin:6vw auto 15vw auto;
             box-shadow: 3px 3px 10px $color-shadow;
-            margin:5vw 20vw 10vw 20vw;
-            padding:3.5vw;
-            cursor:pointer;
             &:hover
             {
                 -webkit-animation:display_button 0.2s;
@@ -665,12 +662,11 @@ footer
     .presentation
     {
         font-size:2vw;
-        padding-bottom:0;
-        button
+        .button
         {
             font-size: 2vw;
             padding:1.75vw;
-            margin-bottom: 2vw;
+            margin:auto;
         }
     }
     .fonctionnement
@@ -688,12 +684,6 @@ footer
             margin-right:1.5vw;
             padding:1.5vw;
             row-gap: 2.5vw;
-            img
-            {
-                width:3vw;
-                height:3vw;
-                margin-right:5vw;
-            }
             .fonctionnement__cercle /* cercle des numéros 1,2,3 */
             {
                 width:5vw;
@@ -805,12 +795,11 @@ footer
     .presentation
     {
         font-size:2vw;
-        padding-bottom:0;
-        button
+        .button
         {
             font-size: 2vw;
             padding:1.75vw;
-            margin-bottom: 2vw;
+            margin:auto;
         }
     }
     .fonctionnement
@@ -828,12 +817,6 @@ footer
             margin-right:1.5vw;
             padding:1.5vw;
             row-gap: 2.5vw;
-            img
-            {
-                width:3vw;
-                height:3vw;
-                margin-right:5vw;
-            }
             .fonctionnement__cercle /* cercle des numéros 1,2,3 */
             {
                 width:5vw;

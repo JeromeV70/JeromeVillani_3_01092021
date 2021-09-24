@@ -85,6 +85,7 @@ a {
   padding: 3vw;
   text-align: center;
   font-size: 4vw;
+  margin-bottom: 6vw;
 }
 .presentation p:nth-child(1) {
   font-weight: bolder;
@@ -92,22 +93,20 @@ a {
 .presentation p:nth-child(2) {
   color: grey;
 }
-.presentation button {
-  border: none;
+.presentation .button {
+  display: block;
+  width: max-content;
   color: #ffffff;
   font-weight: bold;
-  font-size: 4vw;
-  padding: 3.5vw;
-  border-radius: 50px;
+  font-size: 3vw;
+  padding: 3.5vw 6vw;
+  border-radius: 10vw;
   background: #9356dc;
   background: linear-gradient(345deg, #9356dc 0%, #ff79da 100%);
-  margin-bottom: 8vw;
+  margin: 6vw auto;
   box-shadow: 3px 3px 10px lightgray;
 }
-.presentation button a {
-  color: unset;
-}
-.presentation button:hover {
+.presentation .button:hover {
   -webkit-animation: display_button 0.2s;
 }
 @-webkit-keyframes display_button {
@@ -118,13 +117,14 @@ a {
     transform: rotate(-0.01turn);
   }
 }
-.presentation button:active {
+.presentation .button:active {
   transform: scale(0.9);
 }
 
 .fonctionnement {
   display: flex;
   flex-flow: row wrap;
+  margin-bottom: 6vw;
 }
 .fonctionnement div {
   display: flex;
@@ -683,22 +683,20 @@ footer a .fas {
     width: 70%;
   }
 }
-.menu .menu__liste button {
-  grid-row: 5/6;
-  grid-column: 1/2;
-  border: none;
+.menu .menu__liste .button {
+  display: block;
+  width: max-content;
   color: #ffffff;
   font-weight: bold;
-  font-size: 4vw;
+  font-size: 3vw;
+  padding: 2.5vw 10vw;
+  border-radius: 10vw;
   background: #9356dc;
   background: linear-gradient(345deg, #9356dc 0%, #ff79da 100%);
-  border-radius: 50px;
+  margin: 6vw auto 15vw auto;
   box-shadow: 3px 3px 10px lightgray;
-  margin: 5vw 20vw 10vw 20vw;
-  padding: 3.5vw;
-  cursor: pointer;
 }
-.menu .menu__liste button:hover {
+.menu .menu__liste .button:hover {
   -webkit-animation: display_button 0.2s;
 }
 @-webkit-keyframes display_button {
@@ -709,7 +707,7 @@ footer a .fas {
     transform: rotate(-0.01turn);
   }
 }
-.menu .menu__liste button:active {
+.menu .menu__liste .button:active {
   transform: scale(0.9);
 }
 
@@ -732,12 +730,11 @@ footer a .fas {
 
   .presentation {
     font-size: 2vw;
-    padding-bottom: 0;
   }
-  .presentation button {
+  .presentation .button {
     font-size: 2vw;
     padding: 1.75vw;
-    margin-bottom: 2vw;
+    margin: auto;
   }
 
   .fonctionnement h2 {
@@ -751,11 +748,6 @@ footer a .fas {
     margin-right: 1.5vw;
     padding: 1.5vw;
     row-gap: 2.5vw;
-  }
-  .fonctionnement div img {
-    width: 3vw;
-    height: 3vw;
-    margin-right: 5vw;
   }
   .fonctionnement div .fonctionnement__cercle {
     width: 5vw;
@@ -841,12 +833,11 @@ footer a .fas {
 
   .presentation {
     font-size: 2vw;
-    padding-bottom: 0;
   }
-  .presentation button {
+  .presentation .button {
     font-size: 2vw;
     padding: 1.75vw;
-    margin-bottom: 2vw;
+    margin: auto;
   }
 
   .fonctionnement h2 {
@@ -860,11 +851,6 @@ footer a .fas {
     margin-right: 1.5vw;
     padding: 1.5vw;
     row-gap: 2.5vw;
-  }
-  .fonctionnement div img {
-    width: 3vw;
-    height: 3vw;
-    margin-right: 5vw;
   }
   .fonctionnement div .fonctionnement__cercle {
     width: 5vw;
