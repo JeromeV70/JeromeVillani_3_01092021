@@ -580,6 +580,85 @@ footer a .fas {
     opacity: 1;
   }
 }
+.menu .menu__liste .menu__categorie--entree input[id^=menu__aliment--], .menu .menu__liste .menu__categorie--plat input[id^=menu__aliment--], .menu .menu__liste .menu__categorie--dessert input[id^=menu__aliment--] {
+  display: none;
+}
+.menu .menu__liste .menu__categorie--entree input[id^=menu__aliment--]:checked + label > .menu__aliment .aliment__validation, .menu .menu__liste .menu__categorie--plat input[id^=menu__aliment--]:checked + label > .menu__aliment .aliment__validation, .menu .menu__liste .menu__categorie--dessert input[id^=menu__aliment--]:checked + label > .menu__aliment .aliment__validation {
+  display: block;
+}
+.menu .menu__liste .menu__categorie--entree input[id^=menu__aliment--]:checked + label > .menu__aliment .aliment__prix, .menu .menu__liste .menu__categorie--plat input[id^=menu__aliment--]:checked + label > .menu__aliment .aliment__prix, .menu .menu__liste .menu__categorie--dessert input[id^=menu__aliment--]:checked + label > .menu__aliment .aliment__prix {
+  -webkit-animation: display_prix 0.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes display_prix {
+  0% {
+    transform: translate(0%);
+  }
+  100% {
+    transform: translate(-6rem);
+  }
+}
+.menu .menu__liste .menu__categorie--entree input[id^=menu__aliment--]:checked + label > .menu__aliment .aliment__description, .menu .menu__liste .menu__categorie--plat input[id^=menu__aliment--]:checked + label > .menu__aliment .aliment__description, .menu .menu__liste .menu__categorie--dessert input[id^=menu__aliment--]:checked + label > .menu__aliment .aliment__description {
+  -webkit-animation: display_description 0.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes display_description {
+  0% {
+    width: calc(100% - 6rem);
+  }
+  100% {
+    width: 30%;
+  }
+}
+.menu .menu__liste .menu__categorie--entree input[id^=menu__aliment--]:checked + label > .menu__aliment .aliment__validation, .menu .menu__liste .menu__categorie--plat input[id^=menu__aliment--]:checked + label > .menu__aliment .aliment__validation, .menu .menu__liste .menu__categorie--dessert input[id^=menu__aliment--]:checked + label > .menu__aliment .aliment__validation {
+  display: block;
+  -webkit-animation: display_validation 0.5s;
+}
+@-webkit-keyframes display_validation {
+  0% {
+    width: 1.15rem;
+  }
+  /* 0.75 au lieu de 0 pour éviter effet sautillement sur petit écran */
+  100% {
+    width: 6rem;
+  }
+}
+.menu .menu__liste .menu__categorie--entree input[id^=menu__aliment--]:not(:checked) + label > .menu__aliment .aliment__validation, .menu .menu__liste .menu__categorie--plat input[id^=menu__aliment--]:not(:checked) + label > .menu__aliment .aliment__validation, .menu .menu__liste .menu__categorie--dessert input[id^=menu__aliment--]:not(:checked) + label > .menu__aliment .aliment__validation {
+  display: block;
+  opacity: 0;
+  -webkit-animation: display_shutdown 0.5s;
+}
+@-webkit-keyframes display_shutdown {
+  0% {
+    width: 6rem;
+    opacity: 1;
+  }
+  100% {
+    width: 1.15rem;
+    opacity: 1;
+  }
+}
+.menu .menu__liste .menu__categorie--entree input[id^=menu__aliment--]:checked + label > .menu__aliment .fas, .menu .menu__liste .menu__categorie--plat input[id^=menu__aliment--]:checked + label > .menu__aliment .fas, .menu .menu__liste .menu__categorie--dessert input[id^=menu__aliment--]:checked + label > .menu__aliment .fas {
+  -webkit-animation: display_rotation 0.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes display_rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .menu .menu__liste .menu__categorie--entree .menu__aliment, .menu .menu__liste .menu__categorie--plat .menu__aliment, .menu .menu__liste .menu__categorie--dessert .menu__aliment {
   display: grid;
   grid-template-rows: auto auto;
@@ -634,64 +713,6 @@ footer a .fas {
 }
 .menu .menu__liste .menu__categorie--entree .menu__aliment .aliment__validation .fas, .menu .menu__liste .menu__categorie--plat .menu__aliment .aliment__validation .fas, .menu .menu__liste .menu__categorie--dessert .menu__aliment .aliment__validation .fas {
   color: #ffffff;
-}
-.menu .menu__liste .menu__categorie--entree .menu__aliment:active .aliment__prix, .menu .menu__liste .menu__categorie--plat .menu__aliment:active .aliment__prix, .menu .menu__liste .menu__categorie--dessert .menu__aliment:active .aliment__prix {
-  -webkit-animation: display_prix 0.5s;
-  -webkit-animation-fill-mode: forwards;
-}
-@-webkit-keyframes display_prix {
-  0% {
-    transform: translate(0%);
-  }
-  100% {
-    transform: translate(-6rem);
-  }
-}
-.menu .menu__liste .menu__categorie--entree .menu__aliment:active .aliment__description, .menu .menu__liste .menu__categorie--plat .menu__aliment:active .aliment__description, .menu .menu__liste .menu__categorie--dessert .menu__aliment:active .aliment__description {
-  -webkit-animation: display_description 0.5s;
-  -webkit-animation-fill-mode: forwards;
-}
-@-webkit-keyframes display_description {
-  0% {
-    width: calc(100% - 6rem);
-  }
-  100% {
-    width: 30%;
-  }
-}
-.menu .menu__liste .menu__categorie--entree .menu__aliment:active .aliment__validation, .menu .menu__liste .menu__categorie--plat .menu__aliment:active .aliment__validation, .menu .menu__liste .menu__categorie--dessert .menu__aliment:active .aliment__validation {
-  display: block;
-  -webkit-animation: display_validation 0.5s;
-}
-@-webkit-keyframes display_validation {
-  0% {
-    width: 0.75rem;
-  }
-  /* 0.75 au lieu de 0 pour éviter effet sautillement sur petit écran */
-  100% {
-    width: 6rem;
-  }
-}
-.menu .menu__liste .menu__categorie--entree .menu__aliment:active .fas, .menu .menu__liste .menu__categorie--plat .menu__aliment:active .fas, .menu .menu__liste .menu__categorie--dessert .menu__aliment:active .fas {
-  -webkit-animation: display_rotation 0.5s;
-  -webkit-animation-fill-mode: forwards;
-}
-@-webkit-keyframes display_rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(90deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  75% {
-    transform: rotate(270deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 .menu .menu__liste .button {
   display: block;
