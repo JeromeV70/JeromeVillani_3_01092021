@@ -298,40 +298,48 @@ color:black;
         text-overflow:ellipsis;
         overflow:hidden;
     }
-    .restaurants__favoris
+
+    input[id^="restaurants__favoris--"]
+    {
+        display:none;
+    }
+
+    input[id^="restaurants__favoris--"]:checked + label > .restaurants__favoris .fas/* Icone favoris activée */
+    {
+        display:inline;
+        background: linear-gradient(345deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color:transparent;
+        -webkit-animation:display_favoris 1.5s;
+
+        @-webkit-keyframes display_favoris
+        {
+            0%{opacity:0%;}
+            100%{opacity:100%;}
+        }
+    }
+
+    input[id^="restaurants__favoris--"]:checked + label > .restaurants__favoris .far/* effacé l'icone vide en cas d'activation */
+    {
+        display:none;
+    }
+
+    label /* conteneur de l'icone favoris */
     {
         grid-row: 3 / 5;
         grid-column: 1 / 2;
-        font-size:2rem;
         justify-self: right;
         align-self: center;
+    }
+    .restaurants__favoris
+    {
+        font-size:2rem;
         cursor:pointer;
         .fas /* Logo favoris non-activé */
         {
             display:none;
         }
-        &:active
-        {
-            .far
-            {
-                display:none;
-            }
-            .fas /* Logo favoris activé */
-            {
-                display:inline;
-                background: linear-gradient(345deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
-                -webkit-background-clip:text;
-                -webkit-text-fill-color:transparent;
-                -webkit-animation:display_favoris 1.5s;
 
-                @-webkit-keyframes display_favoris
-                {
-                    0%{opacity:0%;}
-                    100%{opacity:100%;}
-                }
-            }
-
-        }
     }
     .restaurants__lien
     {
@@ -413,42 +421,41 @@ footer
                 font-weight:normal;
                 font-family:"Shrikhand";
             }
+            input[id^="restaurants__favoris--"]
+            {
+                display:none;
+            }
+            input[id^="restaurants__favoris--"]:checked + label > .restaurants__favoris .fas/* Icone favoris activée */
+            {
+                display:inline;
+                background: linear-gradient(345deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+                -webkit-background-clip:text;
+                -webkit-text-fill-color:transparent;
+                -webkit-animation:display_favoris 1.5s;
+        
+                @-webkit-keyframes display_favoris
+                {
+                    0%{opacity:0%;}
+                    100%{opacity:100%;}
+                }
+            }
+            input[id^="restaurants__favoris--"]:checked + label > .restaurants__favoris .far/* Effacer icone vide si activée */
+            {
+                display:none;
+            }
+            label
+            {
+                align-self: center;
+                margin-right:2rem;
+            }
             .restaurants__favoris /* logo favoris à coté du nom du restaurant */
             {
-                width:max-content;
-                height:auto;
-                margin-right:2rem;
-                margin-top:2rem;
                 font-size: 2rem;
                 cursor:pointer;
-                .fas /* Logo favoris non activé */
+                .fas
                 {
                     display:none;
                 }
-                &:active
-                {
-                    .far
-                    {
-                        display:none;
-                    }
-                    .fas /* Logo favoris activé */
-                    {
-                        display:inline;
-                        background: linear-gradient(345deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
-                        -webkit-background-clip:text;
-                        -webkit-text-fill-color:transparent;
-                        -webkit-animation:display_favoris 1.5s;
-        
-                        @-webkit-keyframes display_favoris
-                        {
-                            0%{opacity:0%;}
-                            50%{opacity:50%;}
-                            100%{opacity:100%;}
-                        }
-                    }
-                }
-
-
             }
         }
         .menu__categorie--entree
@@ -659,13 +666,6 @@ footer
         }
     }
 }
-
-
-
-
-
-
-
 
 /* 
 
