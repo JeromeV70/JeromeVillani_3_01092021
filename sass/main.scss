@@ -486,20 +486,29 @@ footer
                 }
             }
         }
+        @-webkit-keyframes display_plats
+        {
+            0%{opacity:0;}
+            40%{opacity:0;}
+            100%{opacity:1;}
+        }
         .menu__categorie--entree
         {
             grid-row:2/3;
             grid-column:1/2;
+            -webkit-animation:display_plats 1.25s;
         }
         .menu__categorie--plat
         {
             grid-row:3/4;
             grid-column:1/2;
+            -webkit-animation:display_plats 1.75s;
         }
         .menu__categorie--dessert
         {
             grid-row:4/5;
             grid-column:1/2;
+            -webkit-animation:display_plats 2.25s;
         }
         .menu__categorie--entree,.menu__categorie--plat,.menu__categorie--dessert /* les 3 catégories de plats */
         {
@@ -523,21 +532,6 @@ footer
                 padding-bottom:1rem;
                 margin: 0 100% 1.5rem 1rem;
                 border-bottom: 0.3rem solid $color-attention;
-            }
-            @each $aliment in $aliments
-            {
-                .menu__aliment:nth-of-type(#{$aliment})
-                {
-                    -webkit-animation:display_aliment #{$aliment}s;
-    
-                    @-webkit-keyframes display_aliment
-                    {
-                        0%{opacity:0;}
-                        33%{opacity:0;}
-                        50%{opacity:0.5;}
-                        100%{opacity:1;}
-                    }
-                }
             }
             input[id^="menu__aliment--"]
             {
@@ -742,7 +736,7 @@ footer
 
 /* 
 
-------------------------------début RESPONSIVE -----------------------------------
+------------------------------ RESPONSIVE -----------------------------------
 
 @media screen and (min-width:769px) and (max-width:991px)
 @media screen and (min-width:991px) and (max-width:4096px)

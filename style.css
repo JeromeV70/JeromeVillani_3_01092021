@@ -417,17 +417,31 @@ footer a .fas {
 .menu .menu__liste .menu__restaurant .restaurants__favoris .fas {
   display: none;
 }
+@-webkit-keyframes display_plats {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .menu .menu__liste .menu__categorie--entree {
   grid-row: 2/3;
   grid-column: 1/2;
+  -webkit-animation: display_plats 1.25s;
 }
 .menu .menu__liste .menu__categorie--plat {
   grid-row: 3/4;
   grid-column: 1/2;
+  -webkit-animation: display_plats 1.75s;
 }
 .menu .menu__liste .menu__categorie--dessert {
   grid-row: 4/5;
   grid-column: 1/2;
+  -webkit-animation: display_plats 2.25s;
 }
 .menu .menu__liste .menu__categorie--entree, .menu .menu__liste .menu__categorie--plat, .menu .menu__liste .menu__categorie--dessert {
   display: flex;
@@ -451,176 +465,6 @@ footer a .fas {
   padding-bottom: 1rem;
   margin: 0 100% 1.5rem 1rem;
   border-bottom: 0.3rem solid #99e2d0;
-}
-.menu .menu__liste .menu__categorie--entree .menu__aliment:nth-of-type(1), .menu .menu__liste .menu__categorie--plat .menu__aliment:nth-of-type(1), .menu .menu__liste .menu__categorie--dessert .menu__aliment:nth-of-type(1) {
-  -webkit-animation: display_aliment 1s;
-}
-@-webkit-keyframes display_aliment {
-  0% {
-    opacity: 0;
-  }
-  33% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.menu .menu__liste .menu__categorie--entree .menu__aliment:nth-of-type(2), .menu .menu__liste .menu__categorie--plat .menu__aliment:nth-of-type(2), .menu .menu__liste .menu__categorie--dessert .menu__aliment:nth-of-type(2) {
-  -webkit-animation: display_aliment 2s;
-}
-@-webkit-keyframes display_aliment {
-  0% {
-    opacity: 0;
-  }
-  33% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.menu .menu__liste .menu__categorie--entree .menu__aliment:nth-of-type(3), .menu .menu__liste .menu__categorie--plat .menu__aliment:nth-of-type(3), .menu .menu__liste .menu__categorie--dessert .menu__aliment:nth-of-type(3) {
-  -webkit-animation: display_aliment 3s;
-}
-@-webkit-keyframes display_aliment {
-  0% {
-    opacity: 0;
-  }
-  33% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.menu .menu__liste .menu__categorie--entree .menu__aliment:nth-of-type(4), .menu .menu__liste .menu__categorie--plat .menu__aliment:nth-of-type(4), .menu .menu__liste .menu__categorie--dessert .menu__aliment:nth-of-type(4) {
-  -webkit-animation: display_aliment 4s;
-}
-@-webkit-keyframes display_aliment {
-  0% {
-    opacity: 0;
-  }
-  33% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.menu .menu__liste .menu__categorie--entree .menu__aliment:nth-of-type(5), .menu .menu__liste .menu__categorie--plat .menu__aliment:nth-of-type(5), .menu .menu__liste .menu__categorie--dessert .menu__aliment:nth-of-type(5) {
-  -webkit-animation: display_aliment 5s;
-}
-@-webkit-keyframes display_aliment {
-  0% {
-    opacity: 0;
-  }
-  33% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.menu .menu__liste .menu__categorie--entree .menu__aliment:nth-of-type(6), .menu .menu__liste .menu__categorie--plat .menu__aliment:nth-of-type(6), .menu .menu__liste .menu__categorie--dessert .menu__aliment:nth-of-type(6) {
-  -webkit-animation: display_aliment 6s;
-}
-@-webkit-keyframes display_aliment {
-  0% {
-    opacity: 0;
-  }
-  33% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.menu .menu__liste .menu__categorie--entree .menu__aliment:nth-of-type(7), .menu .menu__liste .menu__categorie--plat .menu__aliment:nth-of-type(7), .menu .menu__liste .menu__categorie--dessert .menu__aliment:nth-of-type(7) {
-  -webkit-animation: display_aliment 7s;
-}
-@-webkit-keyframes display_aliment {
-  0% {
-    opacity: 0;
-  }
-  33% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.menu .menu__liste .menu__categorie--entree .menu__aliment:nth-of-type(8), .menu .menu__liste .menu__categorie--plat .menu__aliment:nth-of-type(8), .menu .menu__liste .menu__categorie--dessert .menu__aliment:nth-of-type(8) {
-  -webkit-animation: display_aliment 8s;
-}
-@-webkit-keyframes display_aliment {
-  0% {
-    opacity: 0;
-  }
-  33% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.menu .menu__liste .menu__categorie--entree .menu__aliment:nth-of-type(9), .menu .menu__liste .menu__categorie--plat .menu__aliment:nth-of-type(9), .menu .menu__liste .menu__categorie--dessert .menu__aliment:nth-of-type(9) {
-  -webkit-animation: display_aliment 9s;
-}
-@-webkit-keyframes display_aliment {
-  0% {
-    opacity: 0;
-  }
-  33% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.menu .menu__liste .menu__categorie--entree .menu__aliment:nth-of-type(10), .menu .menu__liste .menu__categorie--plat .menu__aliment:nth-of-type(10), .menu .menu__liste .menu__categorie--dessert .menu__aliment:nth-of-type(10) {
-  -webkit-animation: display_aliment 10s;
-}
-@-webkit-keyframes display_aliment {
-  0% {
-    opacity: 0;
-  }
-  33% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 .menu .menu__liste .menu__categorie--entree input[id^=menu__aliment--], .menu .menu__liste .menu__categorie--plat input[id^=menu__aliment--], .menu .menu__liste .menu__categorie--dessert input[id^=menu__aliment--] {
   display: none;
@@ -836,7 +680,7 @@ footer a .fas {
 
 /* 
 
-------------------------------début RESPONSIVE -----------------------------------
+------------------------------ RESPONSIVE -----------------------------------
 
 @media screen and (min-width:769px) and (max-width:991px)
 @media screen and (min-width:991px) and (max-width:4096px)
