@@ -204,8 +204,8 @@ color:black;
         .fonctionnement__cercle /* cercle des numéros 1,2,3 */
         {
             border-radius: 100%;
-            width:1.75rem;
-            height:1.75rem;
+            min-width:1.75rem;
+            min-height:1.75rem;
             align-self: center;
             position:relative;
             left:-1rem;
