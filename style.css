@@ -674,7 +674,7 @@ footer a .fas {
   color: #ffffff;
 }
 .menu .menu__liste .menu__categorie--entree .menu__aliment label, .menu .menu__liste .menu__categorie--plat .menu__aliment label, .menu .menu__liste .menu__categorie--dessert .menu__aliment label {
-  grid-column: 1/4;
+  grid-column: 1/2;
   grid-row: 1/3;
   display: block;
   width: auto;
