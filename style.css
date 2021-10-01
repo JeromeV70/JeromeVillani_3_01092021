@@ -492,10 +492,10 @@ footer a .fas {
 .menu .menu__liste .menu__categorie--entree input[id^=menu__aliment--], .menu .menu__liste .menu__categorie--plat input[id^=menu__aliment--], .menu .menu__liste .menu__categorie--dessert input[id^=menu__aliment--] {
   display: none;
 }
-.menu .menu__liste .menu__categorie--entree input[id^=menu__aliment--]:checked + label > .menu__aliment .aliment__validation, .menu .menu__liste .menu__categorie--plat input[id^=menu__aliment--]:checked + label > .menu__aliment .aliment__validation, .menu .menu__liste .menu__categorie--dessert input[id^=menu__aliment--]:checked + label > .menu__aliment .aliment__validation {
+.menu .menu__liste .menu__categorie--entree input[id^=menu__aliment--]:checked + .menu__aliment .aliment__validation, .menu .menu__liste .menu__categorie--plat input[id^=menu__aliment--]:checked + .menu__aliment .aliment__validation, .menu .menu__liste .menu__categorie--dessert input[id^=menu__aliment--]:checked + .menu__aliment .aliment__validation {
   display: block;
 }
-.menu .menu__liste .menu__categorie--entree input[id^=menu__aliment--]:checked + label > .menu__aliment .aliment__prix, .menu .menu__liste .menu__categorie--plat input[id^=menu__aliment--]:checked + label > .menu__aliment .aliment__prix, .menu .menu__liste .menu__categorie--dessert input[id^=menu__aliment--]:checked + label > .menu__aliment .aliment__prix {
+.menu .menu__liste .menu__categorie--entree input[id^=menu__aliment--]:checked + .menu__aliment .aliment__prix, .menu .menu__liste .menu__categorie--plat input[id^=menu__aliment--]:checked + .menu__aliment .aliment__prix, .menu .menu__liste .menu__categorie--dessert input[id^=menu__aliment--]:checked + .menu__aliment .aliment__prix {
   -webkit-animation: display_prix 0.5s;
   -webkit-animation-fill-mode: forwards;
 }
@@ -507,7 +507,7 @@ footer a .fas {
     transform: translate(-6rem);
   }
 }
-.menu .menu__liste .menu__categorie--entree input[id^=menu__aliment--]:not(checked) + label > .menu__aliment .aliment__prix, .menu .menu__liste .menu__categorie--plat input[id^=menu__aliment--]:not(checked) + label > .menu__aliment .aliment__prix, .menu .menu__liste .menu__categorie--dessert input[id^=menu__aliment--]:not(checked) + label > .menu__aliment .aliment__prix {
+.menu .menu__liste .menu__categorie--entree input[id^=menu__aliment--]:not(checked) + .menu__aliment .aliment__prix, .menu .menu__liste .menu__categorie--plat input[id^=menu__aliment--]:not(checked) + .menu__aliment .aliment__prix, .menu .menu__liste .menu__categorie--dessert input[id^=menu__aliment--]:not(checked) + .menu__aliment .aliment__prix {
   -webkit-animation: display_prix_retour 0.5s;
   -webkit-animation-fill-mode: forwards;
 }
@@ -519,7 +519,7 @@ footer a .fas {
     transform: translate(0%);
   }
 }
-.menu .menu__liste .menu__categorie--entree input[id^=menu__aliment--]:checked + label > .menu__aliment .aliment__description, .menu .menu__liste .menu__categorie--plat input[id^=menu__aliment--]:checked + label > .menu__aliment .aliment__description, .menu .menu__liste .menu__categorie--dessert input[id^=menu__aliment--]:checked + label > .menu__aliment .aliment__description {
+.menu .menu__liste .menu__categorie--entree input[id^=menu__aliment--]:checked + .menu__aliment .aliment__description, .menu .menu__liste .menu__categorie--plat input[id^=menu__aliment--]:checked + .menu__aliment .aliment__description, .menu .menu__liste .menu__categorie--dessert input[id^=menu__aliment--]:checked + .menu__aliment .aliment__description {
   -webkit-animation: display_description 0.5s;
   -webkit-animation-fill-mode: forwards;
 }
@@ -531,7 +531,7 @@ footer a .fas {
     width: 40%;
   }
 }
-.menu .menu__liste .menu__categorie--entree input[id^=menu__aliment--]:not(checked) + label > .menu__aliment .aliment__description, .menu .menu__liste .menu__categorie--plat input[id^=menu__aliment--]:not(checked) + label > .menu__aliment .aliment__description, .menu .menu__liste .menu__categorie--dessert input[id^=menu__aliment--]:not(checked) + label > .menu__aliment .aliment__description {
+.menu .menu__liste .menu__categorie--entree input[id^=menu__aliment--]:not(checked) + .menu__aliment .aliment__description, .menu .menu__liste .menu__categorie--plat input[id^=menu__aliment--]:not(checked) + .menu__aliment .aliment__description, .menu .menu__liste .menu__categorie--dessert input[id^=menu__aliment--]:not(checked) + .menu__aliment .aliment__description {
   -webkit-animation: display_description_retour 0.5s;
   -webkit-animation-fill-mode: forwards;
 }
@@ -543,7 +543,7 @@ footer a .fas {
     width: calc(100% - 6rem);
   }
 }
-.menu .menu__liste .menu__categorie--entree input[id^=menu__aliment--]:checked + label > .menu__aliment .aliment__validation, .menu .menu__liste .menu__categorie--plat input[id^=menu__aliment--]:checked + label > .menu__aliment .aliment__validation, .menu .menu__liste .menu__categorie--dessert input[id^=menu__aliment--]:checked + label > .menu__aliment .aliment__validation {
+.menu .menu__liste .menu__categorie--entree input[id^=menu__aliment--]:checked + .menu__aliment .aliment__validation, .menu .menu__liste .menu__categorie--plat input[id^=menu__aliment--]:checked + .menu__aliment .aliment__validation, .menu .menu__liste .menu__categorie--dessert input[id^=menu__aliment--]:checked + .menu__aliment .aliment__validation {
   display: block;
   -webkit-animation: display_validation 0.5s;
 }
@@ -556,7 +556,7 @@ footer a .fas {
     width: 6rem;
   }
 }
-.menu .menu__liste .menu__categorie--entree input[id^=menu__aliment--]:not(:checked) + label > .menu__aliment .aliment__validation, .menu .menu__liste .menu__categorie--plat input[id^=menu__aliment--]:not(:checked) + label > .menu__aliment .aliment__validation, .menu .menu__liste .menu__categorie--dessert input[id^=menu__aliment--]:not(:checked) + label > .menu__aliment .aliment__validation {
+.menu .menu__liste .menu__categorie--entree input[id^=menu__aliment--]:not(:checked) + .menu__aliment .aliment__validation, .menu .menu__liste .menu__categorie--plat input[id^=menu__aliment--]:not(:checked) + .menu__aliment .aliment__validation, .menu .menu__liste .menu__categorie--dessert input[id^=menu__aliment--]:not(:checked) + .menu__aliment .aliment__validation {
   display: block;
   opacity: 0;
   -webkit-animation: display_shutdown 0.5s;
@@ -571,7 +571,7 @@ footer a .fas {
     opacity: 1;
   }
 }
-.menu .menu__liste .menu__categorie--entree input[id^=menu__aliment--]:not(checked) + label > .menu__aliment .fas, .menu .menu__liste .menu__categorie--plat input[id^=menu__aliment--]:not(checked) + label > .menu__aliment .fas, .menu .menu__liste .menu__categorie--dessert input[id^=menu__aliment--]:not(checked) + label > .menu__aliment .fas {
+.menu .menu__liste .menu__categorie--entree input[id^=menu__aliment--]:not(checked) + .menu__aliment .fas, .menu .menu__liste .menu__categorie--plat input[id^=menu__aliment--]:not(checked) + .menu__aliment .fas, .menu .menu__liste .menu__categorie--dessert input[id^=menu__aliment--]:not(checked) + .menu__aliment .fas {
   -webkit-animation: display_rotation_retour 0.5s;
   -webkit-animation-fill-mode: forwards;
 }
@@ -592,7 +592,7 @@ footer a .fas {
     transform: rotate(0deg);
   }
 }
-.menu .menu__liste .menu__categorie--entree input[id^=menu__aliment--]:checked + label > .menu__aliment .fas, .menu .menu__liste .menu__categorie--plat input[id^=menu__aliment--]:checked + label > .menu__aliment .fas, .menu .menu__liste .menu__categorie--dessert input[id^=menu__aliment--]:checked + label > .menu__aliment .fas {
+.menu .menu__liste .menu__categorie--entree input[id^=menu__aliment--]:checked + .menu__aliment .fas, .menu .menu__liste .menu__categorie--plat input[id^=menu__aliment--]:checked + .menu__aliment .fas, .menu .menu__liste .menu__categorie--dessert input[id^=menu__aliment--]:checked + .menu__aliment .fas {
   -webkit-animation: display_rotation 0.5s;
   -webkit-animation-fill-mode: forwards;
 }
@@ -672,6 +672,14 @@ footer a .fas {
 }
 .menu .menu__liste .menu__categorie--entree .menu__aliment .aliment__validation .fas, .menu .menu__liste .menu__categorie--plat .menu__aliment .aliment__validation .fas, .menu .menu__liste .menu__categorie--dessert .menu__aliment .aliment__validation .fas {
   color: #ffffff;
+}
+.menu .menu__liste .menu__categorie--entree .menu__aliment label, .menu .menu__liste .menu__categorie--plat .menu__aliment label, .menu .menu__liste .menu__categorie--dessert .menu__aliment label {
+  grid-column: 1/4;
+  grid-row: 1/3;
+  display: block;
+  width: auto;
+  height: 100%;
+  opacity: 0;
 }
 .menu .menu__liste .button {
   display: block;
