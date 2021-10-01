@@ -212,6 +212,7 @@ a {
   .restaurants {
     display: flex;
     flex-flow: row wrap;
+    padding-bottom: 15%;
   }
 }
 
@@ -360,7 +361,7 @@ footer a .fas {
 
 /* 
 
-------------------------------début pages individuelles des restaurants-----------------------------------
+------------------------------ page individuelle des restaurants -----------------------------------
 
 */
 .menu {
