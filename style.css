@@ -213,6 +213,10 @@ a {
     display: flex;
     flex-flow: row wrap;
     padding-bottom: 15%;
+    justify-content: center;
+  }
+  .restaurants h2 {
+    width: 100%;
   }
 }
 
@@ -386,6 +390,11 @@ footer a .fas {
   display: grid;
   grid-template-rows: auto auto auto auto auto;
   grid-template-columns: 100%;
+}
+@media screen and (min-width: 769px) and (max-width: 4096px) {
+  .menu .menu__liste {
+    padding-bottom: 15%;
+  }
 }
 .menu .menu__liste .menu__restaurant {
   display: flex;

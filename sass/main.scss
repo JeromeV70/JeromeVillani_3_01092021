@@ -255,6 +255,11 @@ color:black;
         display:flex;
         flex-flow:row wrap;
         padding-bottom:15%;
+        justify-content: center;
+        h2
+        {
+            width:100%;
+        }
     }     
 }
 
@@ -448,7 +453,10 @@ footer
         display:grid;
         grid-template-rows: auto auto auto auto auto;
         grid-template-columns: 100%;
-
+        @media screen and (min-width:769px) and (max-width:4096px)
+        {
+            padding-bottom:15%;
+        }
         .menu__restaurant /* nom du restaurant + favoris */
         {
             display:flex;
