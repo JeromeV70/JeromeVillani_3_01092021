@@ -48,7 +48,8 @@ a {
   height: 100%;
   background-color: grey;
   visibility: hidden;
-  opacity: 0.9;
+  opacity: 0.75;
+  z-index: 1;
   -webkit-animation: loader_background 2s linear 0s;
 }
 @-webkit-keyframes loader_background {
