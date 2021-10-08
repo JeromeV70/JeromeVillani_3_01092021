@@ -386,7 +386,7 @@ color:black;
         -webkit-background-clip:text;
         -webkit-text-fill-color:transparent;
         -webkit-text-stroke:initial;
-        -webkit-animation:display_favoris 4s;
+        -webkit-animation:display_favoris 2s;
 
         @-webkit-keyframes display_favoris
         {
@@ -505,7 +505,7 @@ footer
                 -webkit-background-clip:text;
                 -webkit-text-fill-color:transparent;
                 -webkit-text-stroke:initial;
-                -webkit-animation:display_favoris 4s;
+                -webkit-animation:display_favoris 2s;
         
                 @-webkit-keyframes display_favoris
                 {
@@ -577,9 +577,49 @@ footer
             {
                 display:none;
             }
-            input[id^="menu__aliment--"]:checked + .menu__aliment .aliment__validation
+            input[id^="menu__aliment--"]:checked + .menu__aliment .aliment__titre,
             {
-                display:block;
+                -webkit-animation:display_titre 0.5s;
+                -webkit-animation-fill-mode: forwards;
+
+                @-webkit-keyframes display_titre
+                {
+                    0%{width:calc(100% - 4rem);}
+                    100%{width:calc(100% - 7.5rem);}
+                }
+            }
+            input[id^="menu__aliment--"]:not(checked) + .menu__aliment.aliment__titre
+            {
+                -webkit-animation:display_titre_retour 0.5s;
+                -webkit-animation-fill-mode: forwards;
+
+                @-webkit-keyframes display_titre_retour
+                {
+                    0%{width:calc(100% - 7.5rem);}
+                    100%{width:calc(100% - 4rem);}
+                }
+            }
+            input[id^="menu__aliment--"]:checked + .menu__aliment .aliment__description
+            {
+                -webkit-animation:display_description 0.5s;
+                -webkit-animation-fill-mode: forwards;
+
+                @-webkit-keyframes display_description
+                {
+                    0%{width:calc(100% - 4rem)}
+                    100%{width:calc(100% - 10rem);}
+                }
+            }
+            input[id^="menu__aliment--"]:not(checked) + .menu__aliment .aliment__description
+            {
+                -webkit-animation:display_description_retour 0.5s;
+                -webkit-animation-fill-mode: forwards;
+
+                @-webkit-keyframes display_description_retour
+                {
+                    0%{width:calc(100% - 10rem);}
+                    100%{width:calc(100% - 4rem)}
+                }
             }
             input[id^="menu__aliment--"]:checked + .menu__aliment .aliment__prix
             {
@@ -601,28 +641,6 @@ footer
                 {
                     0%{transform:translate(-6rem);}
                     100%{transform:translate(0%);}
-                }
-            }
-            input[id^="menu__aliment--"]:checked + .menu__aliment .aliment__description
-            {
-                -webkit-animation:display_description 0.5s;
-                -webkit-animation-fill-mode: forwards;
-
-                @-webkit-keyframes display_description
-                {
-                    0%{width:calc(100% - 6rem);}
-                    100%{width:40%;}
-                }
-            }
-            input[id^="menu__aliment--"]:not(checked) + .menu__aliment .aliment__description
-            {
-                -webkit-animation:display_description_retour 0.5s;
-                -webkit-animation-fill-mode: forwards;
-
-                @-webkit-keyframes display_description_retour
-                {
-                    0%{width:40%;}
-                    100%{width:calc(100% - 6rem);}
                 }
             }
             input[id^="menu__aliment--"]:checked + .menu__aliment .aliment__validation
@@ -694,9 +712,8 @@ footer
                 {
                     grid-row:1/2;
                     grid-column:1/2;
-                    width:calc(100% - 4rem);
                     font-size:1.25rem;
-                    margin:1rem 0 1rem 1rem;
+                    margin:1rem;
                     white-space:nowrap;
                     text-overflow:ellipsis;
                     overflow:hidden;
@@ -705,8 +722,7 @@ footer
                 {
                     grid-row:2/3;
                     grid-column:1/2;
-                    width:calc(100% - 4rem);
-                    margin:0 0 1rem 1rem;
+                    margin:0 3rem 1rem 1rem;
                     font-size:1rem;
                     white-space:nowrap;
                     text-overflow:ellipsis;
@@ -720,7 +736,6 @@ footer
                     justify-self: right;
                     font-size:1rem;
                     font-weight:bolder;
-                    text-align:right;
                     margin:0 1rem 0 0;
                 }
                 .aliment__validation
