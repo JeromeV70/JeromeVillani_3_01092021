@@ -61,10 +61,11 @@ a {
 }
 .loader .fas {
   position: relative;
-  left: 27vw;
-  top: 30%;
+  left: calc(50vw - 6rem);
+  /* pour centrer le loader, 6rems = moitié de l'icone */
+  top: calc(50% - 6rem);
   height: auto;
-  font-size: 50vw;
+  font-size: 12em;
   background: linear-gradient(345deg, #9356dc 0%, #ff79da 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -422,6 +423,8 @@ footer a .fas {
 @media screen and (min-width: 769px) and (max-width: 4096px) {
   .menu .menu__liste {
     padding-bottom: 15%;
+    width: 75%;
+    margin: auto;
   }
 }
 .menu .menu__liste .menu__restaurant {

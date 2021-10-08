@@ -81,10 +81,10 @@ color:black;
     .fas /* logo tournant du loader */
     {
         position:relative;
-        left:27vw;
-        top:30%;
+        left:calc(50vw - 6rem); /* pour centrer le loader, 6rems = moitié de l'icone */
+        top:calc(50% - 6rem);
         height:auto;
-        font-size: 50vw;
+        font-size: 12em;
         background: linear-gradient(345deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
         -webkit-background-clip:text;
         -webkit-text-fill-color:transparent;
@@ -478,6 +478,8 @@ footer
         @media screen and (min-width:769px) and (max-width:4096px)
         {
             padding-bottom:15%;
+            width:75%;
+            margin:auto;
         }
         .menu__restaurant /* nom du restaurant + favoris */
         {
